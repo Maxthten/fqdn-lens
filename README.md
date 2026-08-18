@@ -24,6 +24,27 @@ The planned MCP v0.1 server and light-theme Desktop GUI are deliberately not
 part of this workspace baseline yet. They must reuse `ApplicationService` when
 implemented and must not add a second collection path.
 
+## Open-source references and borrowed ideas
+
+The local workspace keeps two reference projects under the sibling directory
+`..\reference-projects\`: `amass` and `subfinder`. They are study references,
+not runtime dependencies of FQDN Lens, and their source is not compiled into
+this repository.
+
+| Reference | Ideas used for study | Explicit boundary |
+|---|---|---|
+| ProjectDiscovery Subfinder | Passive source adapter organization, source authentication, aggregation, rate-limit/source status handling, and practical CLI ergonomics | FQDN Lens does not copy its implementation or add arbitrary third-party source behavior |
+| OWASP Amass | Project/scope modeling, provenance and relationship-oriented evidence, and future visualization ideas | FQDN Lens does not enable active enumeration, DNS brute force, port scanning, or Amass-specific active workflows |
+
+中文说明：本项目确实参考了 `Subfinder` 和 `Amass` 的设计思路，主要借鉴
+passive source adapter、source status、scope/provenance、聚合和可视化方向；
+没有直接复制它们的实现，也没有把它们作为运行时依赖。FQDN Lens 自己的
+Rust ApplicationService、四个固定 production source、FQDN Forge contract、
+secure credential model、双语 presentation 和 TUI 是本项目独立实现的部分。
+
+后续如果需要移植具体代码，必须先核对对应项目的 license、文件来源和修改
+记录；当前阶段只保留参考目录，不自动把参考项目代码合并进 FQDN Lens。
+
 ## Run locally
 
 In one terminal, start FQDN Forge:
