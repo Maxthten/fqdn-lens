@@ -1,0 +1,18 @@
+[package]
+name = "lens-lab"
+version.workspace = true
+edition.workspace = true
+license.workspace = true
+
+[dependencies]
+anyhow.workspace = true
+chrono.workspace = true
+futures-util.workspace = true
+lens-core = { path = "../lens-core" }
+reqwest.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+tokio.workspace = true
+tokio-util.workspace = true
+url.workspace = true
+uuid.workspace = true

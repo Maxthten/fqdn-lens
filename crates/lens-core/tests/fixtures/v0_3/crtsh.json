@@ -1,0 +1,7 @@
+[
+  {
+    "id": 42,
+    "name_value": "api.acme.test\n*.wild.acme.test",
+    "not_before": "2026-01-01T00:00:00Z"
+  }
+]

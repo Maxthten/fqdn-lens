@@ -1,0 +1,1953 @@
+{
+  "schema_version": "fqdn-lens.forge-coverage-matrix.v2",
+  "scenarios": [
+    {
+      "id": "001-basic-certificate",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "certificate_records",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        1
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "002-basic-archive",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "archive_records",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        2
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "003-basic-passive-dns",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "passive_dns",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        3
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "004-basic-code-search",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "code_search",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        4
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "005-multi-source-overlap",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        5
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "006-wildcard-and-root",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        6
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "007-scope-boundaries",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        7
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "008-normalization",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        8
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "009-url-host-extraction",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        9
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "010-time-evidence-merge",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        10
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "011-empty-success",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        11
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "012-pagination-success",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        12
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "013-pagination-duplicate-loop",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        13
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "014-authentication-errors",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        14
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "015-rate-limit-retry",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        15
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "016-upstream-server-failure",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        16
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "017-timeout-and-disconnect",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        17
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "018-malformed-hostile-payload",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        18
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "019-large-dataset",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        19
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "020-cancellation-and-egress-guard",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        20
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "021-internet-search-nested-json",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "url_search",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        21
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "022-internet-search-partial",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        22
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "023-threat-intel-evidence",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "threat_intel",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        23
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "024-threat-intel-noise",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        24
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "025-search-engine-html",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "search_html",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        25
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "026-search-engine-links",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        26
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "027-organization-domains",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "organization",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        27
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "028-organization-conflict",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        28
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "029-user-import-csv",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "generic_csv",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        29
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "030-user-import-invalid",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        30
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "031-generic-json-deep",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "generic_json",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        31
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "032-generic-json-types",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        32
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "033-generic-html-text",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "generic_html",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        33
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "034-generic-html-noise",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        34
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "035-custom-rest-header",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "custom_rest",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        35
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "036-custom-rest-post",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        36
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": "Consumes Forge's public request_body_template contract; Lens must reject a missing non-paginated POST body contract rather than infer a body."
+    },
+    {
+      "id": "037-page-pagination",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        37
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "038-offset-pagination",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        38
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "039-post-cursor-pagination",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        39
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "040-link-header-pagination",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        40
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "041-empty-page",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        41
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "042-cursor-loop",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        42
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "043-retry-after-seconds",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        43
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "044-retry-after-date",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        44
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "045-retry-after-invalid",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        45
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "046-no-content",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        46
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "047-wrong-content-type",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        47
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "048-html-error-json",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        48
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "049-unicode-punycode",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        49
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "050-url-boundaries",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        50
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "051-multilevel-scope",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        51
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "052-time-conflict",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        52
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "053-evidence-conflict",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        53
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "054-duplicate-evidence",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        54
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "055-high-unique-100k",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        55
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "056-multi-source-large",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        56
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "057-slow-fast-sources",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        57
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "058-cancel-pagination",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        58
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "059-seed-reproducible",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        59
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "060-seed-variation",
+      "group": "direct-core",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        60
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "061-network-direct-profile",
+      "group": "direct-core",
+      "classification": "supported-forge-pass",
+      "capability": "collector_core",
+      "verifier_profile": "direct-core",
+      "seeds": [
+        61
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "062-proxy-http-forward-success",
+      "group": "safe-rejection",
+      "classification": "safe-rejection",
+      "capability": "strict_direct_egress",
+      "verifier_profile": "safe-rejection",
+      "seeds": [
+        62
+      ],
+      "assertions": [
+        "strict_direct_rejected",
+        "zero_source_requests",
+        "zero_quota_consumption",
+        "no_capability_leakage"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "063-proxy-auth-and-redaction",
+      "group": "safe-rejection",
+      "classification": "safe-rejection",
+      "capability": "strict_direct_egress",
+      "verifier_profile": "safe-rejection",
+      "seeds": [
+        63
+      ],
+      "assertions": [
+        "strict_direct_rejected",
+        "zero_source_requests",
+        "zero_quota_consumption",
+        "no_capability_leakage"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "064-proxy-connect-lifecycle",
+      "group": "safe-rejection",
+      "classification": "safe-rejection",
+      "capability": "strict_direct_egress",
+      "verifier_profile": "safe-rejection",
+      "seeds": [
+        64
+      ],
+      "assertions": [
+        "strict_direct_rejected",
+        "zero_source_requests",
+        "zero_quota_consumption",
+        "no_capability_leakage"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "065-proxy-faults-and-timeouts",
+      "group": "safe-rejection",
+      "classification": "safe-rejection",
+      "capability": "strict_direct_egress",
+      "verifier_profile": "safe-rejection",
+      "seeds": [
+        65
+      ],
+      "assertions": [
+        "strict_direct_rejected",
+        "zero_source_requests",
+        "zero_quota_consumption",
+        "no_capability_leakage"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "066-proxy-egress-and-cross-run-denied",
+      "group": "safe-rejection",
+      "classification": "safe-rejection",
+      "capability": "strict_direct_egress",
+      "verifier_profile": "safe-rejection",
+      "seeds": [
+        66
+      ],
+      "assertions": [
+        "strict_direct_rejected",
+        "zero_source_requests",
+        "zero_quota_consumption",
+        "no_capability_leakage"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "067-external-submission-pass",
+      "group": "lifecycle",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "lifecycle",
+      "seeds": [
+        67
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": "Forge's current public manifest omits source evidence confidence/field contract details; Lens preserves the public evidence locally without inferring them."
+    },
+    {
+      "id": "068-external-submission-missing",
+      "group": "lifecycle",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "lifecycle",
+      "seeds": [
+        68
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "069-external-submission-out-of-scope",
+      "group": "lifecycle",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "lifecycle",
+      "seeds": [
+        69
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "070-external-submission-evidence-time",
+      "group": "lifecycle",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "lifecycle",
+      "seeds": [
+        70
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "071-source-status-audit-conflict",
+      "group": "lifecycle",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "lifecycle",
+      "seeds": [
+        71
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "072-duplicate-cross-run-submission",
+      "group": "lifecycle",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "lifecycle",
+      "seeds": [
+        72
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "073-gzip-json-success",
+      "group": "transport-quota",
+      "classification": "supported-forge-pass",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        73
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "074-gzip-corrupt-stream",
+      "group": "transport-quota",
+      "classification": "supported-forge-pass",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        74
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "075-gzip-decoded-limit",
+      "group": "transport-quota",
+      "classification": "supported-forge-pass",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        75
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "076-content-length-anomaly",
+      "group": "transport-quota",
+      "classification": "supported-forge-pass",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        76
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "077-strict-replay-success",
+      "group": "transport-quota",
+      "classification": "supported-lens-local",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        77
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "078-strict-replay-difference",
+      "group": "transport-quota",
+      "classification": "supported-lens-local",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        78
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "079-deflate-success",
+      "group": "transport-quota",
+      "classification": "supported-forge-pass",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        79
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "080-brotli-success",
+      "group": "transport-quota",
+      "classification": "supported-forge-pass",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        80
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "081-deflate-corrupt-stream",
+      "group": "transport-quota",
+      "classification": "supported-forge-pass",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        81
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "082-brotli-decoded-limit",
+      "group": "transport-quota",
+      "classification": "supported-forge-pass",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        82
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "083-chunked-success",
+      "group": "transport-quota",
+      "classification": "supported-forge-pass",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        83
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "084-chunked-truncated",
+      "group": "transport-quota",
+      "classification": "supported-forge-pass",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        84
+      ],
+      "assertions": [
+        "forge_verdict_passed",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "085-quota-per-source",
+      "group": "transport-quota",
+      "classification": "supported-lens-local",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        85
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "086-quota-per-key",
+      "group": "transport-quota",
+      "classification": "supported-lens-local",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        86
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "087-quota-global-run",
+      "group": "transport-quota",
+      "classification": "supported-lens-local",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        87
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "088-quota-recovery-http-date",
+      "group": "transport-quota",
+      "classification": "supported-lens-local",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        88
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "089-cache-observable-audit",
+      "group": "transport-quota",
+      "classification": "supported-lens-local",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        89
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "090-quota-concurrent-atomicity",
+      "group": "transport-quota",
+      "classification": "supported-lens-local",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        90
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "091-pagination-second-page-rate-limit",
+      "group": "transport-quota",
+      "classification": "supported-lens-local",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        91
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "092-rate-limit-retry-deflate-success",
+      "group": "transport-quota",
+      "classification": "supported-lens-local",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        92
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "093-quota-recovery-brotli-success",
+      "group": "transport-quota",
+      "classification": "supported-lens-local",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        93
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "094-proxy-auth-then-source-rate-limit",
+      "group": "safe-rejection",
+      "classification": "safe-rejection",
+      "capability": "strict_direct_egress",
+      "verifier_profile": "safe-rejection",
+      "seeds": [
+        94
+      ],
+      "assertions": [
+        "strict_direct_rejected",
+        "zero_source_requests",
+        "zero_quota_consumption",
+        "no_capability_leakage"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "095-proxy-reset-then-retry-success",
+      "group": "safe-rejection",
+      "classification": "safe-rejection",
+      "capability": "strict_direct_egress",
+      "verifier_profile": "safe-rejection",
+      "seeds": [
+        95
+      ],
+      "assertions": [
+        "strict_direct_rejected",
+        "zero_source_requests",
+        "zero_quota_consumption",
+        "no_capability_leakage"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "096-connect-tunnel-truncated-payload",
+      "group": "safe-rejection",
+      "classification": "safe-rejection",
+      "capability": "strict_direct_egress",
+      "verifier_profile": "safe-rejection",
+      "seeds": [
+        96
+      ],
+      "assertions": [
+        "strict_direct_rejected",
+        "zero_source_requests",
+        "zero_quota_consumption",
+        "no_capability_leakage"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "097-source-503-then-chunked-success",
+      "group": "transport-quota",
+      "classification": "supported-lens-local",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        97
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "098-chunked-content-length-conflict",
+      "group": "transport-quota",
+      "classification": "supported-lens-local",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        98
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "099-multi-source-global-quota-isolation",
+      "group": "transport-quota",
+      "classification": "supported-lens-local",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        99
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "100-cancel-during-quota-recovery",
+      "group": "transport-quota",
+      "classification": "supported-lens-local",
+      "capability": "transport_quota_cache",
+      "verifier_profile": "transport-quota",
+      "seeds": [
+        100
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "101-proxy-target-canonicalization",
+      "group": "safe-rejection",
+      "classification": "safe-rejection",
+      "capability": "strict_direct_egress",
+      "verifier_profile": "safe-rejection",
+      "seeds": [
+        101
+      ],
+      "assertions": [
+        "strict_direct_rejected",
+        "zero_source_requests",
+        "zero_quota_consumption",
+        "no_capability_leakage"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "102-proxy-authority-header-ambiguity",
+      "group": "safe-rejection",
+      "classification": "safe-rejection",
+      "capability": "strict_direct_egress",
+      "verifier_profile": "safe-rejection",
+      "seeds": [
+        102
+      ],
+      "assertions": [
+        "strict_direct_rejected",
+        "zero_source_requests",
+        "zero_quota_consumption",
+        "no_capability_leakage"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "103-proxy-encoded-and-userinfo-targets",
+      "group": "safe-rejection",
+      "classification": "safe-rejection",
+      "capability": "strict_direct_egress",
+      "verifier_profile": "safe-rejection",
+      "seeds": [
+        103
+      ],
+      "assertions": [
+        "strict_direct_rejected",
+        "zero_source_requests",
+        "zero_quota_consumption",
+        "no_capability_leakage"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "104-proxy-framing-and-header-limits",
+      "group": "safe-rejection",
+      "classification": "safe-rejection",
+      "capability": "strict_direct_egress",
+      "verifier_profile": "safe-rejection",
+      "seeds": [
+        104
+      ],
+      "assertions": [
+        "strict_direct_rejected",
+        "zero_source_requests",
+        "zero_quota_consumption",
+        "no_capability_leakage"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "105-stale-capability-after-reset-delete",
+      "group": "lifecycle",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "lifecycle",
+      "seeds": [
+        105
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "stale_capability_rejected",
+        "reset_delete_public_lifecycle"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "106-concurrent-cross-run-lifecycle",
+      "group": "lifecycle",
+      "classification": "supported-lens-local",
+      "capability": "collector_core",
+      "verifier_profile": "lifecycle",
+      "seeds": [
+        106
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "concurrent_run_isolation",
+        "sqlite_transaction_isolation"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "107-json-structural-mutation-campaign",
+      "group": "resilience",
+      "classification": "supported-lens-local",
+      "capability": "resilience_replay_soak",
+      "verifier_profile": "resilience",
+      "seeds": [
+        107
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "108-text-html-csv-mutation-campaign",
+      "group": "resilience",
+      "classification": "supported-lens-local",
+      "capability": "resilience_replay_soak",
+      "verifier_profile": "resilience",
+      "seeds": [
+        108
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "109-pagination-token-mutation-campaign",
+      "group": "resilience",
+      "classification": "supported-lens-local",
+      "capability": "resilience_replay_soak",
+      "verifier_profile": "resilience",
+      "seeds": [
+        109
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "110-transport-framing-mutation-campaign",
+      "group": "resilience",
+      "classification": "supported-lens-local",
+      "capability": "resilience_replay_soak",
+      "verifier_profile": "resilience",
+      "seeds": [
+        110
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "evidence_preserved",
+        "source_status_audited"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "111-mixed-lifecycle-soak",
+      "group": "resilience",
+      "classification": "supported-lens-local",
+      "capability": "resilience_replay_soak",
+      "verifier_profile": "resilience",
+      "seeds": [
+        111
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "lifecycle_soak",
+        "no_running_runs"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "112-concurrent-mixed-fault-soak",
+      "group": "resilience",
+      "classification": "supported-lens-local",
+      "capability": "resilience_replay_soak",
+      "verifier_profile": "resilience",
+      "seeds": [
+        112
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "eight_concurrent_lanes",
+        "resource_cleanup"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "113-replay-provenance-and-multi-diff",
+      "group": "resilience",
+      "classification": "supported-lens-local",
+      "capability": "resilience_replay_soak",
+      "verifier_profile": "resilience",
+      "seeds": [
+        113
+      ],
+      "assertions": [
+        "lens_local_assertion",
+        "replay_provenance_diff",
+        "run_fingerprint_stable"
+      ],
+      "owner": "fqdn-lens",
+      "notes": ""
+    },
+    {
+      "id": "114-coverage-and-baseline-integrity",
+      "group": "resilience",
+      "classification": "forge-owned",
+      "capability": "forge_coverage_integrity",
+      "verifier_profile": "resilience",
+      "seeds": [
+        114
+      ],
+      "assertions": [
+        "forge_coverage_baseline_archived"
+      ],
+      "owner": "fqdn-forge",
+      "notes": ""
+    }
+  ]
+}

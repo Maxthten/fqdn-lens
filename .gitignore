@@ -1,0 +1,17 @@
+/target/
+/artifacts/
+/reports/
+/exports/
+/logs/
+/*.db
+/*.db-shm
+/*.db-wal
+/*.json
+/*.csv
+/*.log
+/*.tmp
+/.env
+/.env.*
+!/.env.example
+/api.txt
+/local-secret.txt

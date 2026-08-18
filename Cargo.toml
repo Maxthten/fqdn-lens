@@ -1,0 +1,31 @@
+[workspace]
+resolver = "2"
+members = ["crates/lens-core", "crates/lens-cli", "crates/lens-lab", "crates/lens-tui"]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2024"
+license = "MIT"
+authors = ["FQDN Lens contributors"]
+
+[workspace.dependencies]
+anyhow = "1"
+async-trait = "0.1"
+crossterm = "0.29.0"
+chrono = { version = "0.4", features = ["serde"] }
+clap = { version = "4", features = ["derive"] }
+csv = "1"
+futures-util = "0.3"
+psl = "2"
+reqwest = { version = "0.12", default-features = false, features = ["brotli", "deflate", "gzip", "http2", "json", "rustls-tls", "stream"] }
+rusqlite = { version = "0.37", features = ["bundled", "chrono"] }
+scraper = "0.24"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+sha2 = "0.10"
+thiserror = "2"
+tokio = { version = "1", features = ["macros", "rt-multi-thread", "sync", "time"] }
+tokio-util = { version = "0.7", features = ["rt"] }
+toml = "0.8"
+url = "2"
+uuid = { version = "1", features = ["serde", "v4"] }
