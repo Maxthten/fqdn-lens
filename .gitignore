@@ -15,3 +15,4 @@
 !/.env.example
 /api.txt
 /local-secret.txt
+/docs/
